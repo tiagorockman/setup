@@ -13,6 +13,7 @@ Check ?
 - (?) Prettier
 - (?) Color Highlight
 
+*Para Angular utilizar o pluggin Angular Extension Pack da Loiane Groner
 (?) Modificar settings.json e incluir o seguinte conteúdo:
 
 {
@@ -29,20 +30,18 @@ Check ?
 
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
   "workbench.iconTheme": "vscode-icons",
   "debug.console.fontFamily": "Fira Code Retina",
   "editor.fontFamily": "'Fira Code Retina', Consolas, 'Courier New', monospace",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.5,
   "editor.fontLigatures": false,
   "editor.fontSize": 12,
-  "editor.lineHeight": 24,
-  "editor.formatOnSave": true,
+  "editor.lineHeight": 21,
   "update.mode": "none",
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.rulers": [80, 120],
   "editor.tabSize": 2,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 12,
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
@@ -55,12 +54,61 @@ Check ?
   "prettier.singleQuote": true,
   "files.autoSave": "onFocusChange",
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-  "csharp.unitTestDebuggingOptions": {
+  "csharp.unitTestDebuggingOptions": {},
+  "launch": {
+
+    "configurations": [],
+    "compounds": []
+  },
+  "auto-close-tag.activationOnLanguage": [
   
-  }
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "explorer.confirmDelete": false
 }
 
-
+/*
+<!-- pressionando alt+Shift seta mover baixo duplica a linha que está o cursor-->
+    <!-- pressionando ctrl+K na linha que está o cursor irá excluir a linha-->
+    <!-- pressionando alt+ seta mover - movera a linha para cima para baixo etc -->
+    <!-- pressionando F2 na tag renomeia tanto inicio como fechamento da mesma-->
+    <!-- com a tag selecionada pressione e segure ctrl+D selecionará todas as tags iguais e com as setas você
+       poderá selectionar e fazer a alteração do texto, você também pode ir pressionando ctrl+D e o VsCode vai selecionando os 
+	   textos iguais que serão alterados-->
+*/
 (?) Criar HTML com Emmet
 (?) Mostrar duplicação de linhas
 (?) Mostrar como mover linhas
